@@ -1,0 +1,28 @@
+---
+description: Portfolio site project rules
+alwaysApply: true
+---
+# Project Rules
+
+## Stack
+- React + Vite
+- Mantine for UI components — use Mantine components before writing custom CSS
+- No additional UI libraries or CSS frameworks without asking first (no Tailwind, no MUI, etc.)
+- No state management libraries (Redux, Zustand, etc.) — use React's built-in useState/useContext unless truly needed
+
+## Code style
+- Functional components with hooks only
+- Keep components small — if a component file passes ~150 lines, suggest splitting it, don't just let it grow
+- Prefer boring, well-known patterns over clever ones
+- Comment non-obvious logic, skip comments on self-explanatory code
+
+## Constraints
+- Don't add npm packages without asking first and explaining why
+- Don't introduce backend/database/auth unless explicitly requested — this is a static portfolio site
+- No animation libraries (Framer Motion, GSAP) unless asked — Mantine's built-in transitions are enough for now
+- Explain any pattern that isn't plain React + Mantine before using it
+
+## Priorities
+1. Working and simple over impressive and complex
+2. Code I can read and explain over code that's "elegant"
+3. Consistency across files over one-off clever solutions
