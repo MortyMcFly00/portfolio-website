@@ -1,5 +1,5 @@
 {/* Mantine Imports */}
-import { Group, Image, Button, Text } from "@mantine/core";
+import { Group, Image, Button, Text, Tabs } from "@mantine/core";
 
 {/* Image Imports */}
 import logo from "../assets/logo.png";
@@ -10,7 +10,11 @@ import '@fontsource/Assistant/400.css';
 import '@fontsource/Rubik/300.css';
 import '@fontsource/Rubik/500.css';
 
+import { Link, useLocation } from "react-router-dom";
+
 function Navbar() {
+    const location = useLocation();
+    
     return (
         <Group 
             justify="space-between" 
@@ -24,13 +28,15 @@ function Navbar() {
                 style={{ 
                     paddingLeft: '10px'       
                     }}>
-
-                <Image 
-                    src={logo} 
-                    alt="Logo" 
-                    w={60} 
-                    h={60}  
+                
+                <Link to='/'>
+                    <Image 
+                        src={logo} 
+                        alt="Logo" 
+                        w={60} 
+                        h={60}  
                     />
+                </Link>
 
             </Group>
 
@@ -43,16 +49,83 @@ function Navbar() {
             </Group>
 
             <Group 
-                justify="flex-end " 
+                justify="flex-end "
+                bottom={"5%"} 
                 style={{
-                    paddingRight: '15px',
+                    paddingRight: '50px',
+                    paddingTop: '24px',
                     display: 'flex',
                     gap: '10px'
                     }}>
 
-            <Button variant="default">About Me</Button>
-            <Button variant="default">Projects</Button>
-            <Button variant="default">Contact</Button>
+                <Tabs 
+                    value={location.pathname}
+                    variant="unstyled"
+                    styles={{
+                        tab: {
+                            transition: "all 0.2s ease",
+                        },
+
+                        tabLabel: {
+                            fontFamily: '"Rubik", sans-serif',
+                        },
+
+                        tabSection: {
+                            margin: 0,
+                        },
+                    }}    
+                >
+                    <Tabs.List
+                        style={{
+                            gap: '0.5rem',
+                        }}
+                    >
+                        <Tabs.Tab 
+                            value="/About"
+                            component={Link}
+                            to="/about"
+                            style={{
+                                fontFamily: '"Rubik", sans-serif',
+                                fontWeight: 500,
+                                color: "#1a1a1a",
+                                padding: "0.5rem 1rem",
+                                borderRadius: "999px",
+                            }}
+                        >
+                            About Me
+                        </Tabs.Tab>
+
+                        <Tabs.Tab 
+                            value="/Projects"
+                            component={Link}
+                            to="/projects"
+                            style={{
+                                fontFamily: '"Rubik", sans-serif',
+                                fontWeight: 500,
+                                color: "#1a1a1a",
+                                padding: "0.5rem 1rem",
+                                borderRadius: "999px",
+                            }}
+                        >
+                            Projects
+                        </Tabs.Tab>
+
+                        <Tabs.Tab 
+                            value="/Contact"
+                            component={Link}
+                            to="/contact"
+                            style={{
+                                fontFamily: '"Rubik", sans-serif',
+                                fontWeight: 500,
+                                color: "#1a1a1a",
+                                padding: "0.5rem 1rem",
+                                borderRadius: "999px",
+                            }}
+                        >
+                            Contact Me
+                        </Tabs.Tab>
+                    </Tabs.List>
+                </Tabs>
 
             </Group>
         </Group>
