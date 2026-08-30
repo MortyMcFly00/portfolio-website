@@ -13,7 +13,7 @@ function BrandSlide() {
                 pos={'absolute'}
                 w={'93%'}
                 h={'96%'}
-                top={'1rem'}
+                top={'1%'}
                 left={'3.5%'}
                 style={{
                     background: '#ffffff',
@@ -34,8 +34,8 @@ function BrandSlide() {
                 <Image 
                     src={logo} 
                     alt="logo"
-                    w="38rem"
-                    h= "38rem"
+                    w="100%"
+                    h= "100%"
                     fit="contain"
                     style={{
                         transform: 'scale(.95)'

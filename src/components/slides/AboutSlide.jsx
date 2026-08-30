@@ -22,8 +22,8 @@ import '@fontsource/Rubik/500.css';
                 pos={'absolute'}
                 w={'93%'}
                 h={'96%'}
-                top={'1rem'}
-                left={'3.75rem'}
+                top={'2%'}
+                left={'3.55%'}
                 style={{
                     background: '#ffffff',
                     borderRadius: '25px',
@@ -45,8 +45,8 @@ import '@fontsource/Rubik/500.css';
             
             <Title 
                 pos={"absolute"}
-                top={"3.5rem"}
-                left={"9rem"}
+                top={"9%"}
+                left={"9%"}
                 c={'white'}
                 ff={'"Rubik", sans-serif'}
                 fw={500}
@@ -63,8 +63,8 @@ import '@fontsource/Rubik/500.css';
                                                 
             <Text
                 pos={'absolute'}
-                top={'15rem'}
-                left={'11rem'}
+                top={'30%'}
+                left={'11%'}
                 c={'white'}
                 fw={400}
                 style={{
@@ -82,8 +82,8 @@ import '@fontsource/Rubik/500.css';
                                                 
             <Button
                 pos="absolute"
-                top="30rem"
-                left="19rem"
+                top="65%"
+                left="20%"
                 variant="white"
                 color="dark"
                 w={300}

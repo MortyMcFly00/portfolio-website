@@ -18,7 +18,7 @@ function PortfolioCarousel() {
             slideGap={0}
             loop
             align="start"
-            initialSlide={1}
+            initialSlide={0}
             style={{
                 transform: 'scale(1)'
             }} 

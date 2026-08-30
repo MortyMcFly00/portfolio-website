@@ -23,8 +23,8 @@ import '@fontsource/Rubik/500.css';
                     pos="absolute"
                     w="93%"
                     h="96%"
-                    top="1rem"
-                    left="3.75rem"
+                    top="2%"
+                    left="3.5%"
                     style={{
                         zIndex: 0,
                         background: "#ffffff",
@@ -123,7 +123,7 @@ import '@fontsource/Rubik/500.css';
                 {/* Buttons */}
                 <Group
                     pos={'absolute'}
-                    top={'55%'}
+                    top={'53%'}
                     left={'17%'}
                     gap='md'
                     style={{
@@ -166,8 +166,8 @@ import '@fontsource/Rubik/500.css';
                     {/* Terminal Frame */}
                     <Box
                         pos="absolute"
-                        bottom="10%"
-                        left="180%"
+                        top={'-300%'}
+                        left="158%"
                         w="145%"
                         p="md"
                         style={{
