@@ -6,9 +6,9 @@ import '@mantine/carousel/styles.css';
 import { Routes, Route } from 'react-router-dom';
 
 {/* Page Imports */}
-import About from "./pages/AboutPage";
-import Projects from "./pages/ProjectsPage";
-import Contact from "./pages/ContactPage";
+import About from "./pages/About/AboutPage";
+import Projects from "./pages/projects/ProjectsPage";
+import Contact from "./pages/Contact/ContactPage";
 
 {/* Component Imports */}
 import Navbar from "./components/Navbar";

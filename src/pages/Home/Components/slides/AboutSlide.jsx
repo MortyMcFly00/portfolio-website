@@ -1,6 +1,9 @@
 {/* Mantine Imports */}
 import { Image, Overlay, Title, Text, Button, Box } from "@mantine/core";
 
+{/* React-Router Imports */}
+import { Link } from "react-router-dom";
+
 {/* Image Imports */}
 import me from "../../assets/me.jpg";
 
@@ -81,6 +84,7 @@ import '@fontsource/Rubik/500.css';
             </Text>
                                                 
             <Button
+                component={Link} to="/about"
                 pos="absolute"
                 top="65%"
                 left="20%"
