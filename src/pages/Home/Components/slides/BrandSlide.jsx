@@ -2,7 +2,7 @@
 import { Center, Image, Box, Group } from "@mantine/core";
 
 {/* Image Imports */}
-import logo from "../../assets/logo.png";
+import logo from "../../../../assets/logo.png";
 
 function BrandSlide() {
     return (

@@ -5,10 +5,10 @@ import { Group, Image, Button, Text, Tabs } from "@mantine/core";
 import logo from "../assets/logo.png";
 
 {/* Font Imports */}
-import '@fontsource/Assistant/300.css';
-import '@fontsource/Assistant/400.css';
-import '@fontsource/Rubik/300.css';
-import '@fontsource/Rubik/500.css';
+import '@fontsource/assistant/300.css';
+import '@fontsource/assistant/400.css';
+import '@fontsource/rubik/300.css';
+import '@fontsource/rubik/500.css';
 
 import { Link, useLocation } from "react-router-dom";
 

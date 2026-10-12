@@ -2,13 +2,13 @@
 import { Image, Box, Group, Title, Text, Button } from "@mantine/core";
 
 {/* Image Imports */}
-import samplePad from "../../assets/sample-pad.png";
+import samplePad from "../../../../assets/sample-pad.png";
 
 {/* Font Imports */}
-import '@fontsource/Assistant/300.css';
-import '@fontsource/Assistant/400.css';
-import '@fontsource/Rubik/300.css';
-import '@fontsource/Rubik/500.css';
+import '@fontsource/assistant/300.css';
+import '@fontsource/assistant/400.css';
+import '@fontsource/rubik/300.css';
+import '@fontsource/rubik/500.css';
 
 function FeaturedProjectSlide() {
     return(

@@ -12,7 +12,7 @@ import Contact from "./pages/Contact/ContactPage";
 
 {/* Component Imports */}
 import Navbar from "./components/Navbar";
-import PortfolioCarousel from './components/PortfolioCarousel';
+import PortfolioCarousel from './pages/Home/Components/PortfolioCarousel';
 
 
 {/* Main Application */}

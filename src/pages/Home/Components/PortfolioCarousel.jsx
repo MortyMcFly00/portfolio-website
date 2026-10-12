@@ -5,7 +5,7 @@ import { Carousel } from "@mantine/carousel";
 import BrandSlide from "./slides/BrandSlide";
 import AboutSlide from "./slides/AboutSlide";
 import FeaturedProjectSlide from "./slides/FeaturedProjectSlide";
-import CurrentProjectSlide from "./slides/CurrentProjectSlide";
+import CurrentFocusSlide from "./slides/CurrentFocusSlide";
 import ContactSlide from "./slides/ContactSlide";
 
 function PortfolioCarousel() {
@@ -36,7 +36,7 @@ function PortfolioCarousel() {
             </Carousel.Slide>
 
             <Carousel.Slide>
-                <CurrentProjectSlide />  
+                <CurrentFocusSlide />
             </Carousel.Slide>
 
             <Carousel.Slide>
